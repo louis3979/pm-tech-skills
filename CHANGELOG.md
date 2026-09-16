@@ -2,6 +2,17 @@
 
 All notable changes to this marketplace are documented here. The newest `## vX.Y.Z` heading is the current released version — `marketplace.json` and every plugin's `plugin.json` are kept in lockstep with it (checked by `scripts/validate.py`).
 
+## v3.1.0 — 2026-09-16
+
+### Added
+- **`pm-memory`**: `memory-verify-claim` skill + `/verify-claim` command — checks a specific time-sensitive claim (market fact, competitor behavior, industry stat) against live current sources via web search instead of relying on possibly-stale training-data recall, and updates its provenance tag once confirmed. Applies a lesson from `upstash/context7` (fetch live docs instead of hallucinating from stale recall) to PM research claims rather than library/API docs — a plain web-search-driven skill, not a hosted indexing service; no dependency on Context7's own infrastructure.
+- Light cross-references (natural-language, no hard dependency) added to `memory-hypothesize`, `pr-faq-writer`, and `product-strategist` suggesting `memory-verify-claim` when a load-bearing claim is tagged `(industry-knowledge)` or `(intuition, PM, <date>)`.
+
+### Fixed (from an end-to-end QA pass)
+- `prd-writer`: an unresolved permission no longer gets asserted as a guessed Yes/No in the Permissions table while separately flagged as unresolved in Open Questions — now written as `Open — see Open Questions` consistently.
+- `product-prioritizer`: added a dedicated "Unscored: Tech Debt / Infra" output section for backlog items with no natural Reach/Impact, instead of forcing a fake score or dropping them silently.
+- `memory-ingest`: now explicitly creates a new `stakeholders/<person>.md` from `_SCHEMA.md` on a person's first mention, instead of leaving undefined what happens when no file exists yet.
+
 ## v3.0.0 — 2026-09-12
 
 ### Added

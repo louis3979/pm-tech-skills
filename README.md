@@ -4,7 +4,7 @@
 
 # PM Skills: an AI Operating System for Head-of-Product work
 
-> 56 skills and 28 chained workflows across 3 plugins for Claude Code and Claude Cowork. Tech-product requirements/delivery rigor, Head-of-Product leadership, and a markdown-native project memory system — focused on technology/IT products, not business-vertical domain knowledge.
+> 57 skills and 29 chained workflows across 3 plugins for Claude Code and Claude Cowork. Tech-product requirements/delivery rigor, Head-of-Product leadership, and a markdown-native project memory system — focused on technology/IT products, not business-vertical domain knowledge.
 
 Built from a Head-of-Product skill analysis: each skill encodes a concrete workflow (input → framework → output), not a generic prompt. Each command chains one or more skills into an end-to-end process.
 
@@ -113,11 +113,11 @@ For the Head of Product's own operating rhythm and judgment calls: an orchestrat
 </details>
 
 <details>
-<summary><strong>3. pm-memory</strong> — A markdown-native project memory system: durable knowledge, decisions, hypotheses, and stakeholder tracking that survives context loss between sessions (10 skills, 10 commands)</summary>
+<summary><strong>3. pm-memory</strong> — A markdown-native project memory system: durable knowledge, decisions, hypotheses, stakeholder tracking, and live claim verification that survives context loss between sessions (11 skills, 11 commands)</summary>
 
-One operator, one product/initiative. `/init-memory` scaffolds a folder structure: raw artifacts land in `source/` (immutable), get synthesized into `ingestion/` (tagged observation/interpretation/hypothesis/assumption), and propagate into the durable layer — `knowledge/`, `hypotheses/` (evidence + confidence score), `decisions/` (audit trail + reversal condition), `stakeholders/` (touchpoints and cadence). A weekly `/review` sweep is what keeps it from rotting. Inspired by the second-brain model in [phuryn/pm-brain](https://github.com/phuryn/pm-brain), rebuilt in this marketplace's own conventions.
+One operator, one product/initiative. `/init-memory` scaffolds a folder structure: raw artifacts land in `source/` (immutable), get synthesized into `ingestion/` (tagged observation/interpretation/hypothesis/assumption), and propagate into the durable layer — `knowledge/`, `hypotheses/` (evidence + confidence score), `decisions/` (audit trail + reversal condition), `stakeholders/` (touchpoints and cadence). A weekly `/review` sweep is what keeps it from rotting. Inspired by the second-brain model in [phuryn/pm-brain](https://github.com/phuryn/pm-brain); `memory-verify-claim` applies a lesson from [upstash/context7](https://github.com/upstash/context7) (fetch live current sources instead of answering time-sensitive questions from stale training-data recall) — both rebuilt in this marketplace's own conventions, not copied.
 
-**Skills (10):**
+**Skills (11):**
 
 - `memory-init` — Scaffold the memory folder structure into the current directory; detects greenfield/migration/active-repo, runs a short interview, commits locally (never pushes)
 - `memory-ingest` — The workhorse: classify a raw artifact, copy it to `source/`, tag observations in `ingestion/`, propagate to the durable layer as warranted
@@ -129,8 +129,9 @@ One operator, one product/initiative. `/init-memory` scaffolds a folder structur
 - `memory-ideate` — Grounded solution directions for a problem area, tagged with the evidence behind each
 - `memory-plan` — Six-block plan for an objective: known, assumed, who to talk to, hypotheses to open, experiments, decision points
 - `memory-strategy-check` — Check a proposal against stated strategy, citing the specific clause
+- `memory-verify-claim` — Check a specific time-sensitive claim against live current sources instead of relying on training-data recall
 
-**Commands (10):**
+**Commands (11):**
 
 - `/init-memory` — Initialize the project memory system in the current directory
 - `/ingest` — Ingest a raw artifact into project memory
@@ -142,6 +143,7 @@ One operator, one product/initiative. `/init-memory` scaffolds a folder structur
 - `/ideate` — Grounded solution directions for a problem area
 - `/plan` — Six-block plan for an objective
 - `/strategy-check` — Check a proposal against stated strategy
+- `/verify-claim` — Check a specific time-sensitive claim against live current sources
 
 </details>
 

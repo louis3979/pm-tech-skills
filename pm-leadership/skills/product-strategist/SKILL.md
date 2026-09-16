@@ -63,6 +63,7 @@ Save as a markdown document.
 - A strategy that could apply unchanged to a competitor's product is too generic — push for what's actually specific to this product's position and bet.
 - Every proposed bet should be able to answer "why now" — if the honest answer is "no particular reason," reconsider its priority.
 - Hand off an approved bet to `product-bet-evaluator` for a rigorous go/no-go, and the theme set to `roadmap-planner` for sequencing.
+- If a foundational belief rests on a specific market/competitor fact rather than internal data, treat it as a claim to check, not a given — `pm-memory`'s `memory-verify-claim`, if installed, catches a strategy quietly resting on an outdated read of the market.
 
 ## Example
 

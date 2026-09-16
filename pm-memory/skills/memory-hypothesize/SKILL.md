@@ -46,6 +46,7 @@ Append/update in `hypotheses/<topic-file>.md`:
 - A hypothesis without a stated decision trigger isn't finished — it will just sit forever with no path to resolution.
 - Confidence changes always show their reasoning (what new evidence, how independent) — a bare number with no trail isn't trustworthy.
 - If a decision trigger has been met, say so explicitly and point to `memory-decide` rather than letting it pass silently.
+- If a piece of evidence for/against is tagged `(industry-knowledge)` or `(intuition, PM, <date>)` and is actually load-bearing for the confidence score, consider running `memory-verify-claim` on it before trusting the score — a stale "fact" from training-data recall shouldn't quietly set a hypothesis's confidence.
 
 ## Example
 

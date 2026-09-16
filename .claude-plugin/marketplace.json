@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "pm-tech-skills",
-  "version": "3.0.0",
-  "description": "Structured AI workflows for technology/IT product PMs: 56 domain-specific skills and 28 chained workflows across 3 plugins — tech-product requirements/delivery rigor, Head-of-Product leadership, and a markdown-native project memory system.",
+  "version": "3.1.0",
+  "description": "Structured AI workflows for technology/IT product PMs: 57 domain-specific skills and 29 chained workflows across 3 plugins — tech-product requirements/delivery rigor, Head-of-Product leadership, and a markdown-native project memory system.",
   "owner": {
     "name": "Louis",
     "email": "louis@janitorlab.com",
@@ -23,7 +23,7 @@
     },
     {
       "name": "pm-memory",
-      "description": "A markdown-native project memory system for a product operator: durable knowledge, decisions, hypotheses, and stakeholder tracking that survives context loss between sessions, with a source-to-knowledge ingestion pipeline and a weekly maintenance sweep.",
+      "description": "A markdown-native project memory system for a product operator: durable knowledge, decisions, hypotheses, and stakeholder tracking that survives context loss between sessions, with a source-to-knowledge ingestion pipeline, live claim verification, and a weekly maintenance sweep.",
       "source": "./pm-memory",
       "category": "product-management"
     }

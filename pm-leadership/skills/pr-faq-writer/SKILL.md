@@ -56,6 +56,7 @@ Save as a markdown document.
 - A press release with no real customer quote (or an obviously invented-sounding one) is a red flag the concept isn't customer-grounded yet.
 - If several Internal FAQ answers reveal the same underlying risk, name that as the central risk rather than listing it three separate times.
 - Hand a "Ready for PRD" verdict directly to `prd-writer`; hand a weak-spot verdict to whichever skill addresses it (`problem-validator` if the problem itself is shaky, `structured-brainstormer` if the solution angle is weak).
+- Any Customer/Internal FAQ answer that leans on a specific competitor or market fact ("no one else does X") is a claim, not a given — if `pm-memory` is installed, running `memory-verify-claim` on it before finalizing beats discovering it's stale after the PR/FAQ is already being used to justify the concept.
 
 ## Example
 
